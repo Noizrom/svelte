@@ -55,7 +55,19 @@
     </label>
     <input checked disabled type="checkbox" id="feature3" />
     <label for="feature3">
-      Working Tailwind config in rollup. I don't know how
+      Working
+      <b>Tailwind</b>
+      config in rollup. I don't know how
+    </label>
+    <input checked disabled type="checkbox" id="feature4" />
+    <label for="feature4">
+      <b>PWA</b>
+      support
+    </label>
+    <input checked disabled type="checkbox" id="feature5" />
+    <label for="feature5">
+      <b>Typescript</b>
+      support
     </label>
   </div>
 
