@@ -2,10 +2,10 @@
 
 This is a svelte template with preinstalled features such as:
 
-- [] Typescript support
-- [] Python backend with FastAPI
-- [] Tailwind configured on the go
-- [] PWA configured
+- [x] **Typescript** support
+- [x] **Python** backend with `FastAPI`
+- [x] **Tailwind** configured on the go
+- [x] **PWA** configured
 
 # Installation
 
@@ -41,6 +41,8 @@ pipenv run python -m server.run dev
 # Starting the frontend developement server
 pnpm run dev
 ```
+- the python server will run in `http://localhost:7000`. check the api by going to `http://localhost:7000/docs`
+
 
 # Building app for production
 
@@ -53,10 +55,9 @@ pnpm build
 ```bash
 pipenv run python -m server.run
 ```
-
-python server hosts /public files directly
+- python server hosts `public/` files directly
 
 ## Todos:
 
-- [] Add simple config for ports and hostnames
-- [] Manage python server using poetry
+- [ ] Add simple config for ports and hostnames
+- [ ] Manage python server using poetry
