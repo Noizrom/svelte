@@ -1,3 +1,27 @@
+# Svelte Template (Experimental)
+
+A small experimental feature
+
+- serve public/ to python `pywebview`
+
+## Requirements
+
+```bash
+pip install pywebview
+```
+
+## Usage
+
+```bash
+# go to public/
+cd public/
+
+# run the webviewwer
+python webviewer.py
+```
+
+---
+
 # Svelte Template
 
 This is a svelte template with preinstalled features such as:
@@ -41,8 +65,8 @@ pipenv run python -m server.run dev
 # Starting the frontend developement server
 pnpm run dev
 ```
-- the python server will run in `http://localhost:7000`. check the api by going to `http://localhost:7000/docs`
 
+- the python server will run in `http://localhost:7000`. check the api by going to `http://localhost:7000/docs`
 
 # Building app for production
 
@@ -55,6 +79,7 @@ pnpm build
 ```bash
 pipenv run python -m server.run
 ```
+
 - python server hosts `public/` files directly
 
 ## Todos:
