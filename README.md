@@ -24,9 +24,9 @@ To get started, run:
 
 ```bash
 # Installing backend dependencies
-pipenv install
+uv sync
 
-# Installing fronend dependencies
+# Installing frontend dependencies
 pnpm install
 ```
 
@@ -36,9 +36,9 @@ pnpm install
 
 ```bash
 # Starting the backend server
-pipenv run python -m server.run dev
+uv run python -m server.run dev
 
-# Starting the frontend developement server
+# Starting the frontend development server
 pnpm run dev
 ```
 - the python server will run in `http://localhost:7000`. check the api by going to `http://localhost:7000/docs`
@@ -53,11 +53,10 @@ pnpm build
 # Deploying to a server
 
 ```bash
-pipenv run python -m server.run
+uv run python -m server.run
 ```
 - python server hosts `public/` files directly
 
 ## Todos:
 
 - [ ] Add simple config for ports and hostnames
-- [ ] Manage python server using poetry
