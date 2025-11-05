@@ -20,7 +20,20 @@ cd <project-name>
 
 # Initial Setup
 
-To get started, run:
+To get started, first make sure you have Deno installed:
+
+```bash
+# Install Deno (if not already installed)
+curl -fsSL https://deno.land/install.sh | sh
+
+# Or on macOS with Homebrew
+brew install deno
+
+# Or on Windows with PowerShell
+irm https://deno.land/install.ps1 | iex
+```
+
+Then install dependencies:
 
 ```bash
 # Installing backend dependencies
