@@ -26,8 +26,8 @@ To get started, run:
 # Installing backend dependencies
 pipenv install
 
-# Installing fronend dependencies
-pnpm install
+# Installing frontend dependencies
+deno task install
 ```
 
 - note that you can also use `npm` or `yarn` to install frontend dependencies
@@ -38,8 +38,8 @@ pnpm install
 # Starting the backend server
 pipenv run python -m server.run dev
 
-# Starting the frontend developement server
-pnpm run dev
+# Starting the frontend development server
+deno task dev
 ```
 - the python server will run in `http://localhost:7000`. check the api by going to `http://localhost:7000/docs`
 
@@ -47,7 +47,7 @@ pnpm run dev
 # Building app for production
 
 ```bash
-pnpm build
+deno task build
 ```
 
 # Deploying to a server
