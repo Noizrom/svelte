@@ -1,13 +1,22 @@
-import sveltePreprocess from 'svelte-preprocess';
-import tailwindcss from 'tailwindcss';
-import autoprefixer from 'autoprefixer';
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
-export default {
-	// Consult https://svelte.dev/docs#compile-time-svelte-preprocess
+/** @type {import('@sveltejs/kit').Config} */
+const config = {
+	// Consult https://kit.svelte.dev/docs/integrations#preprocessors
 	// for more information about preprocessors
-	preprocess: sveltePreprocess({
-		postcss: {
-			plugins: [tailwindcss(), autoprefixer()]
-		}
-	})
+	preprocess: vitePreprocess(),
+
+	kit: {
+		adapter: adapter({
+			pages: 'build',
+			assets: 'build',
+			fallback: undefined,
+			precompress: false,
+			strict: true
+		})
+	}
 };
+
+export default config;
+

@@ -1,11 +1,7 @@
+import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import { svelte } from '@sveltejs/vite-plugin-svelte';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://vitejs.dev/config/
 export default defineConfig({
-	plugins: [svelte()],
-	server: {
-		port: 8080
-	},
-	publicDir: 'public'
+	plugins: [sveltekit(), tailwindcss()]
 });
