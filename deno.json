@@ -1,9 +1,0 @@
-{
-  "tasks": {
-    "dev": "npm run dev",
-    "build": "npm run build",
-    "start": "npm run start",
-    "check": "npm run check",
-    "install": "npm install"
-  }
-}
