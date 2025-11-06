@@ -1,5 +1,4 @@
 # Dependencies
-/node_modules/
 node_modules/
 
 # Build outputs
@@ -9,6 +8,8 @@ dist/
 build/
 
 # Lock files
+# Note: Lock files are ignored as requested for this project.
+# Generally, lock files should be committed for reproducible builds.
 package-lock.json
 pnpm-lock.yaml
 yarn.lock
