@@ -20,27 +20,14 @@ cd <project-name>
 
 # Initial Setup
 
-To get started, first make sure you have Deno installed:
-
-```bash
-# Install Deno (if not already installed)
-curl -fsSL https://deno.land/install.sh | sh
-
-# Or on macOS with Homebrew
-brew install deno
-
-# Or on Windows with PowerShell
-irm https://deno.land/install.ps1 | iex
-```
-
-Then install dependencies:
+To get started, run:
 
 ```bash
 # Installing backend dependencies
-pipenv install
+uv sync
 
 # Installing frontend dependencies
-deno task install
+pnpm install
 ```
 
 - note that you can also use `npm` or `yarn` to install frontend dependencies
@@ -49,10 +36,10 @@ deno task install
 
 ```bash
 # Starting the backend server
-pipenv run python -m server.run dev
+uv run python -m server.run dev
 
 # Starting the frontend development server
-deno task dev
+pnpm run dev
 ```
 - the python server will run in `http://localhost:7000`. check the api by going to `http://localhost:7000/docs`
 
@@ -60,17 +47,16 @@ deno task dev
 # Building app for production
 
 ```bash
-deno task build
+pnpm build
 ```
 
 # Deploying to a server
 
 ```bash
-pipenv run python -m server.run
+uv run python -m server.run
 ```
 - python server hosts `public/` files directly
 
 ## Todos:
 
 - [ ] Add simple config for ports and hostnames
-- [ ] Manage python server using poetry

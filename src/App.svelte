@@ -50,8 +50,8 @@
     <input checked disabled type="checkbox" id="feature2" />
     <label for="feature2">
       Uses
-      <b>Deno</b>
-      for task running and package management
+      <b>Pnpm</b>
+      which is faster to install than yarn and npm
     </label>
     <input checked disabled type="checkbox" id="feature3" />
     <label for="feature3">
