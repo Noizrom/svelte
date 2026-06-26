@@ -2,11 +2,11 @@
 
 This is a SvelteKit template with preinstalled features such as:
 
-- [x] **Svelte 5** with runes and modern syntax
-- [x] **SvelteKit** with static adapter for pre-rendering
-- [x] **Typescript** support
+- [x] **Svelte 5.56+** with runes and modern syntax
+- [x] **SvelteKit 2.68+** with static adapter for pre-rendering
+- [x] **TypeScript 6** support
 - [x] **Python** backend with `FastAPI`
-- [x] **Tailwind CSS v4** (configless setup)
+- [x] **Tailwind CSS v4** (stable, configless setup)
 - [x] **PWA** configured
 - [x] **Deno** as the package manager and task runner
 
@@ -64,9 +64,11 @@ uv run python -m server.run
 
 ## Framework Details
 
-- **SvelteKit**: Using the static adapter for pre-rendering all pages
-- **Svelte 5**: Modern runes-based reactivity with `$props()`, `$state()`, etc.
-- **Tailwind CSS v4**: Configless setup using `@import "tailwindcss"` in CSS
+- **SvelteKit 2.68+**: Using the static adapter for pre-rendering all pages
+- **Svelte 5.56+**: Modern runes-based reactivity with `$props()`, `$state()`, etc.
+- **Tailwind CSS v4** (stable): Configless setup using `@import "tailwindcss"` in CSS
+- **Vite 8**: Latest build tooling
+- **TypeScript 6**: Latest TypeScript with enhanced type checking
 - **Deno**: Package management via `deno.json` imports map
 
 ## Todos:
